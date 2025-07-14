@@ -1,0 +1,36 @@
+# Node modules
+node_modules/
+frontend/node_modules/
+back-end/node_modules/
+
+# Build output
+build/
+dist/
+frontend/build/
+frontend/dist/
+back-end/dist/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Log files
+npm-debug.log*
+yarn-error.log
+pnpm-debug.log
+
+# Mac system files
+.DS_Store
+
+# Cache/coverage
+.next/
+.vite/
+.cache/
+parcel-cache/
+coverage/
+reports/
+
+# VSCode project settings (escludi tutto tranne settings)
+.vscode/*
+!.vscode/settings.json
