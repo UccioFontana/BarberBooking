@@ -7,161 +7,152 @@
 
 ---
 
-BarberBooking è una piattaforma web moderna e intuitiva per la gestione delle prenotazioni nei saloni di barbiere. Semplifica la prenotazione online, l’organizzazione degli appuntamenti e la gestione del personale, offrendo un’esperienza digitale efficace sia ai clienti che agli operatori del settore.
+BarberBooking is a modern and intuitive web platform for managing bookings in barber shops. It simplifies online booking, appointment organization, and staff management, offering an effective digital experience for both clients and professionals in the industry.
 
 ---
 
-## Indice dei contenuti
+## Table of Contents
 
-- [Caratteristiche principali](#caratteristiche-principali)
-- [Tecnologie e dipendenze principali](#tecnologie-e-dipendenze-principali)
-- [Requisiti minimi / Prerequisiti](#requisiti-minimi--prerequisiti)
-- [Istruzioni di installazione](#istruzioni-di-installazione)
-- [Guida all’utilizzo base](#guida-allutilizzo-base)
-- [Configurazione](#configurazione)
-- [Come contribuire](#come-contribuire)
-- [Licenza](#licenza)
-- [Contatti e autore](#contatti-e-autore)
-
----
-
-## Caratteristiche principali
-
-- **Prenotazione online** di appuntamenti semplice e veloce.
-- **Gestione orari** e disponibilità dei barbieri.
-- **Calendario dinamico** e visualizzazione intuitiva degli appuntamenti.
-- **Gestione utenti** con diversi ruoli (clienti, barbieri, amministratori).
-- **Notifiche automatiche** per promemoria appuntamenti (via email/sistema interno).
-- **Pannello amministratore** per la supervisione e la configurazione del salone.
-- **Storico appuntamenti** e reportistica essenziale.
-- **Sicurezza dei dati** e rispetto della privacy degli utenti.
+- [Main Features](#main-features)
+- [Main Technologies and Dependencies](#main-technologies-and-dependencies)
+- [Minimum Requirements / Prerequisites](#minimum-requirements--prerequisites)
+- [Installation Instructions](#installation-instructions)
+- [Basic Usage Guide](#basic-usage-guide)
+- [Configuration](#configuration)
+- [How to Contribute](#how-to-contribute)
+- [License](#license)
+- [Contact and Author](#contact-and-author)
 
 ---
 
-## Tecnologie e dipendenze principali
+## Main Features
 
-- **Frontend:** <!-- TODO: Specificare framework/libreria frontend, es. React.js, Vue.js -->
-- **Backend:** <!-- TODO: Specificare framework backend, es. Node.js (Express), Django, ecc. -->
-- **Database:** <!-- TODO: Specificare tipo di database, es. PostgreSQL, MongoDB, ecc. -->
-- **Autenticazione:** <!-- TODO: JWT, OAuth, sessioni, ecc. -->
-- **Altre librerie/framework:** <!-- TODO: Elencare dipendenze core, es. Redux, Axios, ecc. -->
-- **Gestione ambienti:** Dotenv per variabili d’ambiente
-
----
-
-## Requisiti minimi / Prerequisiti
-
-- **Node.js** vXX.X.X+ <!-- TODO: Inserire versione minima richiesta -->
-- **npm** vXX.X.X+ <!-- TODO: Inserire versione minima richiesta -->
-- **Database** in esecuzione (locale o remoto) <!-- TODO: Specificare database e versione -->
-- **Sistema operativo:** Windows, macOS o Linux
+- **Online appointment booking** that is simple and fast.
+- **Schedule management** for barbers' availability.
+- **Dynamic calendar** with intuitive appointment display.
+- **User management** with different roles (customers, barbers, administrators).
+- **Automatic notifications** for appointment reminders (via email/internal system).
+- **Admin panel** for overseeing and configuring the salon.
+- **Appointment history** and essential reporting.
+- **Data security** and user privacy compliance.
 
 ---
 
-## Istruzioni di installazione
+## Main Technologies and Dependencies
 
-Segui i passaggi sotto per eseguire BarberBooking in locale:
+- **Frontend:** JavaScript framework (e.g., React.js or Vue.js)
+- **Backend:** Server-side framework (e.g., Node.js, Express, or Django)
+- **Database:** Relational or NoSQL database (e.g., PostgreSQL, MongoDB)
+- **Authentication:** JWT or OAuth
+- **Other libraries/frameworks:** Includes state management and HTTP clients (e.g., Redux, Axios)
+- **Environment Management:** Dotenv for environment variables
 
-1. **Clona la repository**
+---
+
+## Minimum Requirements / Prerequisites
+
+- **Node.js** v16.x or higher
+- **npm** v8.x or higher
+- **Database** running locally or remotely
+- **Operating system:** Windows, macOS, or Linux
+
+---
+
+## Installation Instructions
+
+Follow the steps below to run BarberBooking locally:
+
+1. **Clone the repository**
     ```bash
     git clone https://github.com/UccioFontana/BarberBooking.git
     cd BarberBooking
     ```
 
-2. **Installa le dipendenze**
+2. **Install dependencies**
     ```bash
     npm install
-    # oppure, se si utilizza yarn
-    # yarn install
     ```
 
-3. **Configura il database**
-    - Assicurati che il database sia in esecuzione.
-    - Applica le eventuali migrazioni/schema presenti.  
-      <!-- TODO: Inserire dettagli sul setup DB e comandi per le migrazioni -->
+3. **Set up the database**
+    - Make sure your database server is running.
+    - Apply existing migrations/schema if needed.
 
-4. **Configura le variabili d’ambiente**  
-    Vedi la sezione [Configurazione](#configurazione).
+4. **Configure environment variables**  
+    See the [Configuration](#configuration) section.
 
-5. **Avvia il server di sviluppo**
+5. **Start the development server**
     ```bash
     npm run dev
-    # oppure
-    # yarn dev
     ```
 
 ---
 
-## Guida all’utilizzo base
+## Basic Usage Guide
 
-Dopo aver completato l’installazione:
+After completing installation:
 
-- **Registrazione/Login:** Accedi alla piattaforma come cliente o barbiere.
-- **Prenotazione appuntamento:** Scegli il servizio, seleziona l’orario desiderato e conferma la prenotazione.
-- **Gestione appuntamenti:** Visualizza, modifica o cancella le prenotazioni direttamente dal calendario personale.
-- **Area amministratore:** (se abilitato) Gestisci orari, staff e supervisione generale delle attività.
-- **Ricezione notifiche:** Ricevi promemoria e aggiornamenti relativi agli appuntamenti.
+- **Register/Login:** Access the platform as a customer or barber.
+- **Book appointment:** Choose the service, select the desired time, and confirm the booking.
+- **Manage appointments:** View, edit, or delete bookings from your personal calendar.
+- **Admin area:** (if enabled) Manage hours, staff, and general supervision.
+- **Receive notifications:** Get reminders and updates about your appointments.
 
 ---
 
-## Configurazione
+## Configuration
 
-BarberBooking richiede alcune variabili d’ambiente essenziali per il funzionamento.  
-Crea un file `.env` nella root del progetto e inserisci i seguenti parametri:
+BarberBooking requires certain environment variables to function.  
+Create a `.env` file in the project root and insert the following parameters:
 
 ```env
-# Esempio di file .env
-DB_HOST=<!-- TODO: Inserire host del database -->
-DB_PORT=<!-- TODO: Inserire porta del database -->
-DB_USER=<!-- TODO: Inserire user DB -->
-DB_PASS=<!-- TODO: Inserire password DB -->
-DB_NAME=<!-- TODO: Inserire nome database -->
+DB_HOST=your_database_host
+DB_PORT=your_database_port
+DB_USER=your_database_user
+DB_PASS=your_database_password
+DB_NAME=your_database_name
 
-JWT_SECRET=<!-- TODO: Inserire secret JWT -->
-EMAIL_HOST=<!-- TODO: Inserire provider SMTP/email -->
-EMAIL_USER=<!-- TODO: Inserire user email -->
-EMAIL_PASS=<!-- TODO: Inserire password email -->
+JWT_SECRET=your_jwt_secret
+EMAIL_HOST=your_smtp_provider
+EMAIL_USER=your_email_user
+EMAIL_PASS=your_email_password
 ```
 
-> **Nota:** Non condividere mai pubblicamente i dati sensibili del file `.env`.
+> **Note:** Never share sensitive `.env` data publicly.
 
 ---
 
-## Come contribuire
+## How to Contribute
 
-Contribuire a BarberBooking è il modo migliore per supportarne lo sviluppo! Segui questi semplici passaggi:
+Contributing to BarberBooking is a great way to support its development! Follow these steps:
 
-1. **Forka la repository**
-2. **Crea una branch** per la tua feature o fix:
+1. **Fork the repository**
+2. **Create a branch** for your feature or fix:
     ```bash
-    git checkout -b nome-feature
+    git checkout -b feature-name
     ```
-3. **Sviluppa e testa** i tuoi cambiamenti localmente.
-4. **Esegui il commit** con messaggi chiari e significativi.
-5. **Effettua il push** della branch sul tuo fork.
-6. **Apri una Pull Request** descrivendo il cambiamento proposto.
+3. **Develop and test** your changes locally.
+4. **Commit** your changes with clear, meaningful messages.
+5. **Push the branch** to your fork.
+6. **Open a Pull Request** describing your changes.
 
-**Linee guida:**
-- Segui le best practice di coding e il convenzionale stile del progetto.
-- Mantieni una documentazione chiara nelle pull request.
-- Per domande o suggerimenti, apri una issue.
-
-<!-- TODO: Inserire standard di codifica specifici, se presenti -->
+**Guidelines:**
+- Follow project coding standards and best practices.
+- Keep pull requests well-documented.
+- For questions or suggestions, open an issue.
 
 ---
 
-## Licenza
+## License
 
-Questo progetto è distribuito sotto licenza **MIT**. Consulta il file [LICENSE](LICENSE) per ulteriori dettagli.
+This project is licensed under the **MIT** License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## Contatti e autore
+## Contact and Author
 
-**Autore / Maintainer:**  
-Uccio Fontana  
-<!-- TODO: Inserire una breve bio, link profilo GitHub o indirizzo email -->
+**Author / Maintainer:**  
+Uccio Fontana
 
-Per richieste, supporto o collaborazione, non esitare a contattare l’autore o aprire una issue direttamente sulla repository.
+For requests, support, or collaboration, feel free to contact the author or open an issue directly on the repository.
 
 ---
