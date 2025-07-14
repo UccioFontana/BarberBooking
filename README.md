@@ -40,10 +40,9 @@ BarberBooking is a modern and intuitive web platform for managing bookings in ba
 
 ## Main Technologies and Dependencies
 
-- **Frontend:** JavaScript framework (e.g., React.js or Vue.js)
-- **Backend:** Server-side framework (e.g., Node.js, Express, or Django)
-- **Database:** Relational or NoSQL database (e.g., PostgreSQL, MongoDB)
-- **Authentication:** JWT or OAuth
+- **Frontend:** React.js + TailwindCSS
+- **Backend:** Node.js (Express)
+- **Database:** MySQL
 - **Other libraries/frameworks:** Includes state management and HTTP clients (e.g., Redux, Axios)
 - **Environment Management:** Dotenv for environment variables
 
@@ -53,7 +52,7 @@ BarberBooking is a modern and intuitive web platform for managing bookings in ba
 
 - **Node.js** v16.x or higher
 - **npm** v8.x or higher
-- **Database** running locally or remotely
+- **Database** running locally 
 - **Operating system:** Windows, macOS, or Linux
 
 ---
